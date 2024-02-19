@@ -6,13 +6,9 @@ export const userSchema = new mongoose.Schema(
 		hash: String,
 		firstName: String,
 		lastName: String,
-		mobile: Number,
+		accessGroups: String,
 		email: String,
-		address: {
-			street: String,
-			zipCode: String,
-			city: String,
-		},
+
 	},
 	{
 		collection: 'users',
